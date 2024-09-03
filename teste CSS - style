@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Abertura-Aula 04</title>
+    <style type="text/css">
+        body {
+            background-color: burlywood;
+            color: rgb(61, 54, 54);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-color: beige;
+            text-align: center;
+            font-size: 60px;
+            text-shadow: 3px 3px 1px black;
+        }
+
+        h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        ol {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PetShop</h1>
+    <hr />
+    <h3>Banho e Tosa</h3>
+    <hr />
+    <p>lista de animais</p>
+    <ol>
+        <li>Wesley</li>
+        <li>Allan</li>
+        <li>David luiz</li>
+        <li>Gabigol</li>
+        <li>vaca</li>
+        <li>boi</li>
+    </ol>
+</body>
+
+</html>
