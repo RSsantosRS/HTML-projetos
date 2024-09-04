@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Abertura-Aula 04</title>
+    <style type="text/css">
+        body {
+            background-color: burlywood;
+            color: rgb(61, 54, 54);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-color: beige;
+            text-align: center;
+            font-size: 60px;
+            text-shadow: 3px 3px 1px black;
+        }
+
+        h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        ol {
+            font-size: 25px;
+        }
+
+        form {
+            background-color: rgb(219, 193, 158);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(61, 54, 54);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PetShop</h1>
+    <hr />
+    <h3>Banho e Tosa</h3>
+    <h3>reserve sua vaga </h3>
+    <hr />
+    <form action="#" method="post" oninput="total.value = (noites.valueAsNumber * 250) 
+    + ((hospede.valueAsNumber - 1) * 50)">
+        <fieldset>
+            <legend>Dados da reserva</legend>
+            <!–- container -->
+                <div class="campo">
+                    <label>Nome do Pet:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome do Pet..." style="width: 20em"
+                        required /><br />
+                </div><br />
+                <div class="campo">
+                    <label class="checkbox">
+                        <input type="radio" name="sexo" value="gato" />Gato
+                    </label>
+                    <label class="checkbox">
+                        <input type="radio" name="sexo" value="cachorro" />Cachorro
+                    </label>
+                    <label class="checkbox">
+                        <input type="radio" name="sexo" value="vaca" />Vaca
+                    </label>
+                    <label class="checkbox">
+                        <input type="radio" name="sexo" value="hamster" />Hamster
+                    </label>
+                    <label class="checkbox">
+                        <input type="radio" name="sexo" value="porco" />Porco
+                    </label>
+                    <label class="checkbox">
+                        <input type="radio" name="sexo" value="bode" />Bode
+                    </label><br /><br />
+                </div>
+                <div class="campo">
+                    <label>E-mail do tutor:</label>
+                    <input type="email" id="email" name="email" required /><br /><br />
+                </div>
+                <div class="campo">
+                    <label>Repita o e-mail:</label>
+                    <input type="email" id="email_repeti" name="email_repeti" required
+                        oninput="check(this)" /><br /><br />
+                </div>
+                <div class="campo">
+                    <label>Data de chegada:</label>
+                    <input type="date" id="dt_chegada" name="dt_chegada" required /><br /><br />
+                </div>
+                <div class="campo">
+                    <label>Número de banhos (R$250,00 por banho):</label>
+                    <input type="number" id="noites" name="noites" value="1" min="1" max="30" required /><br /><br />
+                </div>
+                <div class="campo">
+                    <label>Número de animais (R$50,00 adicional por animal):</label>
+                    <input type="number" id="hospede" name="hospede" value="1" min="1" max="4" required /><br /><br />
+                </div>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label>Total estimado:</label>
+                        R$<output id="total" name="total">250</output>.00
+                        <br>
+                    </div>
+                </fieldset><br />
+                <div class="campo"> <label>Mensagem</label>
+                    <textarea name="message" style="width: 40em"
+                        placeholder="Algum comentário extra?"></textarea><br /><br />
+                </div>
+                <div class="campo">
+                    <label>Código promocional:</label>
+                    <input type="text" id="promo" name="promo" maxlength="6" pattern="[A-Za-z0-9]{6}"
+                        title="Codigo promocional consiste em 6 caracteres alfanuméricos." /> <br />
+                    <br />
+                </div>
+                <div class="campo">
+                    <label>Newsletter</label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="newsletter" value="1" /> Gostaria de receber a nossa Newsletter
+                    </label></br><br>
+                </div>
+                <button class="botao submit" type="submit" name="submit">Requerer reserva
+                </button>
+        </fieldset>
+    </form>
+    <p>lista de animais</p>
+    <ol>
+        <li>Wesley</li>
+        <li>Allan</li>
+        <li>David luiz</li>
+        <li>Gabigol</li>
+        <li>vaca</li>
+        <li>boi</li>
+    </ol>
+</body>
+
+</html>
