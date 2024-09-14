@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso Santos</title>
+        <style>
+            h1{
+                text-align: center;
+                background-color: beige;
+                font-size: 60px;
+                color: rgb(48, 47, 47);
+                font-family: 'Brush Script MT', cursive;'
+                text-shadow: 2px 1px 2px;   
+            }   
+            body{
+                background-color: burlywood;
+            }
+            p{
+                text-align: center;
+                font-size: 20px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            form{
+            
+                padding: 20px;
+                font-size: 20px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: rgb(48, 47, 47);
+            } 
+            h2{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 30px;
+            }  
+
+        </style>
+    </head>
+    <body>
+    <h1> Colégio Santos</h1>
+    <hr />
+
+    <p>Complete o formulario para salvar suas informações</p>
+    <hr />
+    <form action="/action_page.php">
+        <label>Primeiro nome:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Digite seu primeiro nome..."><br>
+
+        <label for="lname">Sobrenome:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Digite seu sobrenome..."><br>
+
+        <label for="matricula">Matricula:</label><br>
+        <input type="text" id="matricula" nome="matricula" placeholder="Digite sua matricula"><br>
+        <h2>Selecione seu curso</h2>
+
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label>matemática e lógica</label><br>
+
+        <input type="radio" id="português" name="fav_language" value="português">
+        <label for="português">português e linguagens</label><br>
+
+        <input type="radio" id="prog" name="fav_language" value="prog">
+        <label for="prog">Intrdução a programação</label><br>
+
+        <input type="radio" id="linguas" name="fav_language" value="linguas">
+        <label for="linguas">Línguas estrangeiras</label><br>
+
+    </form>
+    <figure>
+        <figcaption>Colégio Santos</figcaption>
+        <img src="teste.jpg" alt="Foto das férias no Rio de Janeiro" />
+    </figure>
+    <p> Verificação de Nacionalidade</p>
+    <form action="/action_page.php">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+          <label class="form-check-label" for="mySwitch">Estudante Estrangeiro</label>
+          <label></label>
+        </div>
+    </form>
+    </body>
+</html>
