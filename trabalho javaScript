@@ -1,0 +1,46 @@
+class Aluno{
+    constructor(av,sm1,sm2,faltas){
+        this.av = av;
+        this.faltas =faltas;
+        this.sm1 = sm1 || 0;
+        this.sm2 = sm2 || 0;
+    }
+   reporvou_faltas(faltas){
+    if (faltas>25){
+        return true;
+    }else{
+        return false;
+    }
+   }
+
+   passou_media(av,sm1,sm2){
+        media = (av+sm1+sm2)
+    if(media > 7){
+        return true;
+    }else{
+        return false;
+    }
+   }
+
+   AVS(avs){
+    media = avs;
+
+   }
+   passou(av,sm1,sm2,presenca){
+    
+   }
+    
+
+}
+
+class AlunoEspecial extends Aluno{
+   
+   
+    
+}
+
+let Ana = new Aluno(2,0,0,20)
+let ana = new AlunoEspecial(8)
+console.log("passou por media",Ana.media)
+console.log("passou por avs",ana.mediaAvs)
+console.log("reprovou por falta",Ana.presenca)
