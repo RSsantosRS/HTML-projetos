@@ -1,45 +1,50 @@
 <?php
-// Função para criptografar a senha
-function criptografarSenha($senha) {
-    // Utiliza o algoritmo de hash padrão do PHP (bcrypt) para criptografar a senha
-    return password_hash($senha, PASSWORD_DEFAULT);
-}
+// Verifica se o formulário foi enviado
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Pega os dados enviados pelo formulário
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
-// Conectando ao banco de dados SQLite
-try {
-    // Conexão com o banco de dados SQLite (o arquivo será criado se não existir)
-    $pdo = new PDO('sqlite:meu_banco.db');
-    // Configurando o modo de erro para lançar exceções
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // Função para criptografar a senha
+    function criptografarSenha($senha) {
+        return password_hash($senha, PASSWORD_DEFAULT);
+    }
 
-    // Cria uma tabela se ainda não existir
-    $pdo->exec("CREATE TABLE IF NOT EXISTS usuarios (
-        id INTEGER PRIMARY KEY,
-        nome TEXT NOT NULL,
-        email TEXT NOT NULL UNIQUE,
-        senha TEXT NOT NULL
-    )");
+    // Verifica se todos os campos foram preenchidos
+    if (!empty($nome) && !empty($email) && !empty($senha)) {
+        try {
+            // Conectando ao banco de dados SQLite
+            $pdo = new PDO('sqlite:meu_banco.db');
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Dados de exemplo
-    $nome = 'rafael';
-    $email = 'rafael@gmail.com';
-    $senha = '12345';
+            // Cria a tabela se ainda não existir
+            $pdo->exec("CREATE TABLE IF NOT EXISTS usuarios (
+                id INTEGER PRIMARY KEY,
+                nome TEXT NOT NULL,
+                email TEXT NOT NULL UNIQUE,
+                senha TEXT NOT NULL
+            )");
 
-    // Criptografa a senha
-    $senhaCriptografada = criptografarSenha($senha);
+            // Criptografa a senha
+            $senhaCriptografada = criptografarSenha($senha);
 
-    // Prepara a query para inserir o usuário no banco de dados
-    $stmt = $pdo->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (:nome, :email, :senha)");
+            // Prepara a query para inserir o usuário no banco de dados
+            $stmt = $pdo->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (:nome, :email, :senha)");
 
-    // Executa a query com os parâmetros
-    $stmt->execute([
-        ':nome' => $nome,
-        ':email' => $email,
-        ':senha' => $senhaCriptografada
-    ]);
+            // Executa a query com os parâmetros
+            $stmt->execute([
+                ':nome' => $nome,
+                ':email' => $email,
+                ':senha' => $senhaCriptografada
+            ]);
 
-    echo "Usuário inserido com sucesso!";
-} catch (PDOException $e) {
-    echo "Erro ao conectar ao banco de dados: " . $e->getMessage();
+            echo "Usuário cadastrado com sucesso!";
+        } catch (PDOException $e) {
+            echo "Erro ao conectar ao banco de dados: " . $e->getMessage();
+        }
+    } else {
+        echo "Por favor, preencha todos os campos.";
+    }
 }
 ?>
