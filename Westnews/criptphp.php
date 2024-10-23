@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!empty($nome) && !empty($email) && !empty($senha)) {
         try {
             // Conectando ao banco de dados SQLite
-            $pdo = new PDO('sqlite:meu_banco.db');
+            $pdo = new PDO('sqlite:westnewsDB.db');
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             // Cria a tabela se ainda não existir
