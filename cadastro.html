@@ -11,16 +11,24 @@
             margin: 0;
             display: flex;
             flex-direction: column;
+            background-color: #b3d7f8; 
+            padding: 20px 0; 
+        }
+
+        header {
+            /* Adiciona algum estilo ao cabeçalho, se necessário */
         }
 
         .login-cadastro {
             flex: 1;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Muda o alinhamento para o topo */
+            padding-top: 20px; /* Adiciona espaçamento superior */
         }
 
-        .login-form, .cadastro-form {
+        .cadastro-form {
+            margin-top: 40px; /* Espaço adicional acima do formulário */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -50,6 +58,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+
         .btn-cadastro {
             padding: 10px 20px;
             background-color: #132C47;
@@ -58,11 +67,11 @@
             border-radius: 5px;
             cursor: pointer;
             width: auto;
-            cursor: pointer;
             -webkit-transition-duration: 0.4s; /* Safari */
             transition-duration: 0.4s;
         }
-        .btn-cadastro:hover,.btn-entrar:hover{
+
+        .btn-cadastro:hover, .btn-entrar:hover {
             box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         }
 
@@ -75,6 +84,9 @@
             cursor: pointer;
             -webkit-transition-duration: 0.4s; /* Safari */
             transition-duration: 0.4s;
+        }
+        footer{
+            margin-top: 150px;
         }
     </style>
 </head>
@@ -100,15 +112,24 @@
     <section class="login-cadastro">
         <div class="cadastro-form">
             <h2>Cadastro</h2>
-            <form action="cadastro.php" method="post">
+            <form action="register.php" method="post">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
                 <label for="email-cadastro">E-mail:</label>
                 <input type="email" id="email-cadastro" name="email" required>
 
+                <label for="data-nasc">Data de Nascimento:</label>
+                <input type="date" id="data-nasc" name="data_nasc" required>
+
+                <label for="campus">Campus de ensino:</label>
+                <input type="text" id="campus" name="campus" required>
+                
+                <label for="matricula">Matricula:</label>
+                <input type="text" id="matricula" name="matricula" required>
+
                 <label for="password-cadastro">Senha:</label>
-                <input type="password" id="password-cadastro" name="password" required>
+                <input type="password" id="password-cadastro" name="senha" required>
 
                 <label for="confirm-password">Confirme a Senha:</label>
                 <input type="password" id="confirm-password" name="confirm_password" required>
@@ -131,7 +152,7 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="#sugestao"></a></li>
+                <li><a href="#sugestao">Sugestão</a></li>
                 <li><a href="https://estudante.estacio.br/aura-repo/marcas/estacio/calendario-academico/aluno/2024.2-AO-VIVO_AO-VIVO_SUDESTE_ALUNO.pdf" target="_blank">Calendário</a></li>
                 <li><a href="https://online.estacio.br/c/cursos-com-mais-horas-complementares?items=8&page=2&utm_term=&utm_campaign=%5BPMax%5D+ecl-conversao&utm_source=google&utm_medium=cpc&hsa_acc=1252974095&hsa_cam=21580762513&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL0PnbnnpF7_wC8sNv3lsQJclnNpmFc8BPP_mweAi1I2FWzgjdrs_uBoCWCEQAvD_BwE" target="_blank">AAC</a></li>
             </ul>
@@ -146,11 +167,6 @@
         
     </footer>
 
-    <script>
-    function mostrarCadastro() {
-        var form = document.getElementById("cadastroForm");
-        form.style.display = form.style.display === "none" ? "block" : "none";
-    }
-    </script>
+    
 </body>
 </html>
