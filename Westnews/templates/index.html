@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West News</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Receba notificações diárias</h5>
+                <button class="close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                Cadastre-se para receber notícias da sua faculdade diariamente.
+            </div>
+            <div class="modal-footer">
+                <a href="cadastro.html"><button class="btn btn-primary" id="confirmBtn">Cadastrar</button></a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <a href="index.html"><img id="home" src="../imgs/logo-azul.png" alt="Logo West News"></a>
+
+        <nav>
+            <ul class="box-menu">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="carreiras.html">Carreiras</a></li>
+                <li><a href="https://estudante.estacio.br/aura-repo/marcas/estacio/calendario-academico/aluno/2024.2-AO-VIVO_AO-VIVO_SUDESTE_ALUNO.pdf" target="_blank">Calendário</a></li>
+                <li><a href="aac.html">AAC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="areas-cursos">
+        <ul>
+            <li><a href="TI.html">TI</a></li>
+            <li><a href="saude.html">Saúde</a></li>
+            <li><a href="engenharias.html">Engenharias</a></li>
+            <li><a href="financeiro.html">Economia</a></li>
+        </ul>
+    </div>
+
+    <section class="main-noticia" id="noticia-image">
+        <div class="img-main-noticia">
+            <div class="envolve-titulo-noticia">
+                <h1 id="noticia-titulo">Portal do aluno Estácio</h1>
+                <p id="noticia-p"> O portal Estudante Estácio se consolidou como uma ferramenta indispensável para os alunos da instituição, centralizando em um só lugar diversas funcionalidades que facilitam a gestão acadêmica e o acesso ao conteúdo didático. </p>
+                <div class="botoes">
+                    <div style="width: 100px;"><a id="noticia-link" href="portal-estacio.html"><div class="btn-main">Saiba Mais</div></a></div>
+                    <div style="width: 100px;">
+                        <button class="btn-main btn-main-noticia" id="btnNoticia" onclick="btnNoticia()">
+                            Portal Singular
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="avaliacoes">
+        <div class="aac">
+            <h1>Ganhe horas AAC</h1>
+            <ul class="lista-avaliacoes">
+                <li><a href="https://online.estacio.br/c/cursos-com-mais-horas-complementares?items=8&page=2&utm_term=&utm_campaign=%5BPMax%5D+ecl-conversao&utm_source=google&utm_medium=cpc&hsa_acc=1252974095&hsa_cam=21580762513&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL0PnbnnpF7_wC8sNv3lsQJclnNpmFc8BPP_mweAi1I2FWzgjdrs_uBoCWCEQAvD_BwE" target="_blank">Cursos Complementares</a></li>
+                <li><a href="https://online.estacio.br/c/cursos-com-mais-horas-complementares?items=8&page=2&utm_term=&utm_campaign=%5BPMax%5D+ecl-conversao&utm_source=google&utm_medium=cpc&hsa_acc=1252974095&hsa_cam=21580762513&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL0PnbnnpF7_wC8sNv3lsQJclnNpmFc8BPP_mweAi1I2FWzgjdrs_uBoCWCEQAvD_BwE" target="_blank">Cursos livres</a></li>
+                <li><a href="youtube.html">Palestras & Lives</a></li>
+            </ul>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Simulados</th>
+                    <th>Avaliações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="titulo"> Simulado 1 </td>
+                    <td class="titulo"> AV </td>
+                </tr>
+
+                <tr>
+                    <td  class="border-bottom"> 08/10/2024</td>
+                    <td  class="border-bottom"> 01/11/2024 </td>
+                </tr>
+                
+                <tr>
+                    <td class="titulo"> Simulado 2 </td>
+                    <td class="titulo"> AVS </td>
+                </tr>
+
+                <tr>
+                    <td  class="border-bottom"> 26/10/2024 </td>
+                    <td  class="border-bottom"> 26/11/2024 </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <section class="noticias-1">
+            <div class="container-noticias-1">
+                <div class="img-not1"></div>
+                <div class="box-noticia">
+                    <h1>Outubro Rosa na Estácio</h1>
+                    <p> A expectativa é de que novos eventos voltados à saúde da mulher sejam realizados nos próximos anos, ampliando o impacto positivo e reforçando a importância da prevenção.</p>
+                    <a href="outubro-rosa.html">Saber mais ></a>
+                </div>
+            </div>
+            <div class="container-noticias-1">
+                <div class="img-not2"></div>
+                <div class="box-noticia">
+                    <h1>Estácio no Rock in Rio</h1>
+                    <p>Com iniciativas que promovem tanto a música quanto a educação, a Estácio se posiciona mostrando que a educação e a cultura podem andar de mãos dadas.</p>
+                    <a href="rock.html">Saber mais ></a>
+                </div>
+            </div>
+            <div class="container-noticias-1">
+                <div class="img-not3"></div>
+                <div class="box-noticia">
+                    <h1>Mercado de trabalho para PCDs</h1>
+                    <p>Iniciativas de inclusão têm ganhado força, com programas de capacitação e políticas corporativas que visam a promover a diversidade e a igualdade de oportunidades. </p>
+                    <a href="pcd.html">Saber mais ></a>
+                </div>
+            </div>
+
+            <div class="container-noticias-1">
+                <div class="img-not4"></div>
+                <div class="box-noticia">
+                    <h1>Simuladão Enem Action</h1>
+                    <p>A ação visa testar conhecimentos e preparar os candidatos para o vestibular, oferecendo feedback detalhado e suporte ao estudo.</p>
+                    <a href="enem.html">Saber mais ></a>
+                </div>
+            </div>  
+    </section>
+
+    <div class="container-noticias2">
+        <section class="container">
+            <img src="https://estudante.estacio.br/assets/images/cursos-livres-banner/estacio/desk-01.png">
+            <a href="aac.html">
+                <div class = "baixoDireita">
+                     Horas ACC e conhecimento extra - conheça os Cursos Complementares da Estácio
+                </div>
+            </a>
+        </section>
+        <br><br>
+        <section class="container">
+            <img src="https://www.uninassau.edu.br/sites/mauriciodenassau.edu.br/files/fields/imagemLateral/noticias/2018/12/se-destacar-no-mercado-de-trabalho_1.jpg">
+            <a href="carreiras.html">
+                <div class="baixoDireita"> Integração estudantes com o mercado de trabalho,conheça o Programa Carreiras</div>
+            </a>
+        </section
+        >
+        <br><br>
+        <section class="container">
+            <img  style="height: 250px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABMlBMVEUUS8n///8An9YAqJd5u60Aj53///3//v8TTMgAPscAQ8b9//8AP8YATMiwwOoAqZYAOsYVSsvn7fnZ4/UAOcb2+f2In+CEmt0AnNUAj54AkZoAPsL///ri6vkAhpIARcgAo42+ze4AmNTN2vRph9lCbNF6uq4Ah5xqhtpzt6fM495ruaJGataOxrnQ7um75eGCz8mFyufb8vm14vGM0+h8lN1ZfNZXeNiouuksW8y119JvyrnK5tp0xLt/0sOO0cEptqZKuq2izsSe2dPr8/Kv4NqIw7Ta5+UAqpJps6jD2dg8uas2ZMjJ7uVcwLeLydOf1NjG6ewjr6kcq9tauuKLwsx0u8Fcr71DqLGR0O9RueRlubvH6/m0299/x+yYzcxswdY+ssqSqN4ALcWLp9nA0urIOfLGAAAOOklEQVR4nO2cC1caSRbHuwS6q1/Qhd0INNI8FMSY+AoKziQTFWNmM5PE1TGYaDJLdr7/V9h7q7p5Gefs7olKc+qX6MF+YP/71n0V1SqKRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBLJTMMs13V19tiXcV9QyuxO1vOqXUOhyhzKtKmxavYOtn56RtYcOocCFWZskJ9/bb1IVF6SNYPZj309Px5jlfzcajR+yWTebJG1uXNGmwWrZP1JMtnarCQSFZDogxXnSCX6IBeYbD2rZIREfZ4Ech9cbyVRYS8BCjMJkGhQ+tjX9eMINtAHW41ko2WiwkQGrLjiPPZl/SCYzXCIcguCDcmrBAcl6uCfczFUIx8MFWZCiS8xL86DM1L0wUhg8jU5DBVmEi/Jik/nIC9iHvw1mWygvkbyKXmXSQiNb+bEF639oQ/iID0iW4lMaEU+UMEX4z1S0YJPkq1kaMTkETnGEQoi8T8PN/HOGcaG6R0cHB09ffoaDNh6AjY8rmQylUTki1sx90Vr1VRVlYSYXq/XIzvHx1svXxwevnoFVnwDAzXOvggCySQm8OzZ5uYJyHxx+DZM/Xpca1TwQVXr9U5PT9dxpB7BSG2dkmeVSqICX3yogkNijRpTK4IPquh64guiTaORfHJKepXMmwyGGh5vwurGUmLoi+iD3q/JSVo906uIfBjmjDCiOnEbpQxqUYgwvVZjWiEhlWE+jBBWpHGa2uDFNkTR2woh9EQ1zRDYgKmfBjHKjHxO5meTnN5SCPH01ZQFQeHbStz6RR8rmX+Q8XothGjk7ZS+TOLV4RvR9ccEKvrB1sFthY3XYMPDWzZ8+0KEGyseeZGKfrCRBIUH0wqfgsIXtxVuZeLU9bOw4W0c3VYIhTchx9OxNHO4xTfFJS/yeVEQKBRORhoYuRqW3lOR9KdjPjsVi7xIx+ZkYEQeTY9SVHgynS0SL08yUV6EcDPTeZGOz8lAVDmaDqXrMEo3K9MKfzmpjFL/bOdFPi/6JDIcIU+nBLbWiUmeTSusHG9GlRyfDZ/lvMjEEG1ECl9PJ/xTULhTmRSYqRyfVaKRixKtx5ZxN0wxQWCoqtXSSCOagWrAj9hk9LCfqiAZMZXBI8xJaFbcBhJ/Cx5byJ3ondKTUBFK8kjYOL1+enR0cLB+etrTNFMl0AKfHP/y4t3bVxnUmqhsPhvaECT+Xp1dI7rZg5aAi/K09dNez5zo803N1NSxlr+38/vmSc/76R1OalSw7XhzSIzHFnInrvb+zw83Z73JuQucqdE0+K+ZJn6BRFQNr9XwwEizubN5vPXun2R2s77rbddq+drCwvn5p4sv2zve7vUOl6sKoWrJLMEoVcfkgxHPblTyx+XHfr9QKJYL5WafzLAfpndAXkRtd6cGoN6Li+2rXZCbLYHdtN7p2c2HD+8v+/1iqtAsl8s9UmymCqlisVBIFco39dktT1mXXIGifF5I3L0OX+TxXx7l7qia6jXLzWa5mEoVCk2QlSqWPQJS4UcwYqp5SVZn14aKsUee17gk/LZ7NmZRYdZrYqq9cpHLQ3Up/sIkff4iVSiCwLY1w1UbQ4mRCfNXu7cU7kLGPytzZRGFYoGQfhHtV0iVQaA70/0F8/fIlTDhQn57N/99halJhSlCPqZwuKbKn0l7ttfa2JT5a+QqUng1rTD/HBTeTClM9Qm5BJ3FAg5RR2FslutS6HycNeGLCwtfbivchhT4oVz4rsJU8zNZgiE6090Tx8Jwg9o+bU8rXLiAFPh1WuFH2AYvwAeXZtsHQ2hghL54h8LL1JTCSwJ2LYIPLs22D0bYItxgpr+4pfCc8KgyQZMrbPIoOtM+GMGozRxMGt9TuAAlW39SYKH5lUD0iYsPhqAVn9fOz28JXAAbFpsT+bDY/EDUm4+zngen4an/tr6FPNThmAGnFGo9EBgX83FsGozy4oTCHVCYmlCYKt/A0J31PDgNro+FpLFdm1ZY2yHmZMKHwvuMkLYeIx+M4AO1lj+fMGT+Wt0R6RC+NQHonUAhWDBOPhiBEq/y2DflsaMS7dMuFt7FQrHfv7x8//Xm5uzstAdRNG7m42CNKgYqdPyfoAXGHvjaU1VveoFG28Ic89jX+7+DNaoumiku8cv28+e7uztqr9czx+YxVBRoQw597Ov9PzGicJMP+YLlCza7/f7ny/fvv/bi6oMhfKBOJI0v5H0KW/wUn7eAbiJmeXAaGKjGRNLIX5A/muHkRZF39H688uA0AaWKPiHxE7SCIg2m+JyMzuKXB6eh/j62xOfCG89Jv8nnZFIF7AcdJcb2G8KMfew0otK7XyjilEWRC4y7+Ti2HfWL3IqE1zOxmJP5b4EalQ598bzW47OG6INgQTrLH4b+T1BrP5yeykNZCggfnCfQF7kVa9flQuSDcxFlQqBGDZup/PMmn5lZcuNZi97FmC/+WS42PwsLzkUgHQN9cbtWuyiLzybmyH5D0BevL/7V38RadB4Vgi8a3apGSH3Vny8fjEBfVHydGg68mDsflEgkPxaMgpTRwNJ13QF037lzlRYzHN3RJ1dTMpvpcO7frOyCs4Dg8cKtzRjTWbuTrkZ07rpcY4C796ZWjzhwZj1319Iuqhg5PGsleMxV7UFaDddzqSp8X76rTfDTsJcsTSikVg5O/etuu1OLn5UzHq0qYKzb4yvwwsVqKsm6dxzqp3GNV3tCIesSk1Tdu6+e6mlcB7dkPNYwZbTrgfnMkhotzBsppCHRT6DQJJHCcJ+7WCLp79yS6Dwa2nDJErPEFCcCHrRTZu6yioYjZrYeMlwQyoMQ41eEl8TAGiZOakeyYZc1ICDwtnn4AXgYC2BsA0vhU0JQwtrsQRUaA6LBLfZWLN/FmOfr/oRP8atkovDE8YafSwg7CBXMsizlllHEz3h3oIDtcqK7gH+VIHjI1e26Z6qm6tkGw6lOuLLoSiDG+yEgAkZmYLgwSjW17RiWhYWowffBfwNzyNh7YvaIzoMD4XB8A/HGtuN0N/ZXu5Nn3CPBCgw89JLhFhstYDNnqe5pGIE4JK07dcKfc8Y1parpK2yFhPtM08tW99zI73w6qC/DeappaqRjoR+C9+YMim9tdTtZ7u9edf9hnsXgv14l3bEbCrZUFLcK4QGvXxVPb6ctva5qYh0wBFRPV4w1Eu4j/HtVhBvmdvgR4SdRoFAXkcbAJtLJERXvG99fhTF876OV6ovwGzXTDYwRAZQAcCUqrmaOFKBCsQIaKKmmjtYfJlENr7vDH8fz4dbAUOaZlZRChTxbgEIL1EPUxriGu5fhV923QGp5EGhK3lJuxADSgb9MNMgfXjaiY+jV7LKH1+4tZ7PLVsDWhjs9lQvFIee3VY2LC08dcIUwlFFh0AZlmupVO9Wsihqr9z0FCZ5jDEfZ8CNOyIc04FvWHBeKVQiulg5FmeV8w0hDVr5BIKE2RlHdxXJWd1az+B4DHXpir6RB9slBQME9EE5QYZgtLNxZqjoOxO0BegHZv+dwAwoDjP988X24zh7+QdXW5WJdRWSuIHQXnStsGyJTYnAMs4S/hyv0IY8GeyV8v/2xZ9ZGCo0lMKCWdXksczEAlKr3/KApV8hljawIL0Chzz+cb2OGBCNGJaU1VCjgTYVl+Y4OpZumLlrM6BAItXV3LD+OFFpVDEED/pfPKH92mnj3PExxlJa4Km+cRYdiWAGyi7zGGWw4dFohtCRB7q/FrDgF3Iqoy64CIsC/Boaog3h+HSl0liHXkH1uXmbrJlZS958uHLg2SPjf0BYREBPYKuF5MnLStAN9YFTTCBvaNDvuvCARbA8K0fbjzeBQIRQXeFQ37KL0LMbg7v0rrJfALKQ72dVCFFniWY13UxhA03p4rVFvwTA/mmpJZI8SV6gzXSi0xt5uXCEG0Kh887No7o17V2iJmJaz6AgFqw+926mLgF/i8R9udqSQ2zDYx83D8V0SCi2uZjDeDo8Uwig1S2QvrEl9nhLv34bQ3uGt9IzJps9WbChDccjqurKMVdeKITo9rE74BXawJljkocZwbW5Dl0IdD9THu6kxG1bx9IEV/WJ8gOoBnvrS65ij1OXfXN8KAMOA5DA+h83rG6i3RWaDcQZJnIpuuERyPNozyC5coaJs4NBV1/ywB6QT2SKHZs9+44s6nDQcSR7iiaFgg2CNrJLFTq69wtkDMc4IKFHBU1dAt4+1nJplrgvRtoPl5aKFR1guFZGGKm69hINv0HVcqBZ01xhTqCgE++wqmt1tE3zkrf0QT+75AyI8apgSszr1q4tDPEhxJgHvoWwPDy2ZsNEw2ujAqhkeJBTazN5HM2PvILb/2xivaQZQv5VULz3oLEJ8ghv0N7MfPw7RDGC4McNKGvzJGWYCGIsmjOOOjyHB9bAeBwWar0BFKyYHRCsR2hC7B3wikdfosFVU3qFC5tRhjyYe8MMoZT9Qj+i2PdEi8GcKIXM71B3lOn45WVFdBWt4aVh9+8zYB6GjJ0rBl/n8DrptmGhUfmeoiK/YgaL34U44C7uwuq3bD9TrG9ZKejE7vFjI3PqYDYmWTQdRd7sKXQFsNX0bP1zzxu8DyWLYoNjkLg6XZKaNMIPkfCxjFWv1L3GSWV/TA/pgf0mSBr5jiWYN8oSNs0VDcM46zCVwQVT3AziE4Tw5c6DTjw5jcB4/CLb77ij5gC5+DH+F022Ov7G3srdhOIHycFNSLJwa4yL4BNtoflq8EH8JmfIcQAN+K/AHRkeOxMRsIeP9BhOpYry0wXfGU/AV420JHhTjlZoSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkD8J/AL8SmbHgWGzZAAAAAElFTkSuQmCC">
+            <a href="youtube.html">
+                <div class="baixoDireita"> 
+                    Informação e conhecimento - conheça o canal no Youtube da estacio 
+                </div>
+            </a>
+        </section>
+        <br><br>
+        <section class="container">
+            <img src="data:image/jpeg;base64,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">
+            <a href="biblioteca.html">
+                <div class="baixoDireita"> Biblioteca Estácio- Um grande incentivo à leitura e pesquisa </div>
+            </a>
+        </section>
+        
+        <br> <br>
+        <section class="container">
+            <img style="height: 220px;" src="data:image/png;base64,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">
+            <a href="aac.html">
+                <div class="baixoDireita"> 
+                    Horas ACC e conhecimento extra - conheça os Cursos Complementares da Estácio  
+                </div>
+            </a>
+        </section>
+    </div>
+
+    <footer>
+        <a href="#home"><img src="../imgs/seta.png" alt="Seta"></a>
+
+        <a href="index.html">
+            <div class="logo-footer">
+                <img src="../imgs/logo-azul.png" alt="Logo West News">
+                <p> West News</p>
+            </div>
+        </a>
+
+        <nav>
+            <ul class="box-menu">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="carreiras.html">Carreiras</a></li>
+                <li><a href="https://estudante.estacio.br/aura-repo/marcas/estacio/calendario-academico/aluno/2024.2-AO-VIVO_AO-VIVO_SUDESTE_ALUNO.pdf" target="_blank">Calendário</a></li>
+                <li><a href="aac.html">AAC</a></li>
+            </ul>
+        </nav>
+
+        <div class="box-icones">
+            <a href="https://www.instagram.com/estacio.campogranderj/" target="_blank"><img src="../imgs/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/br.estacio" target="_blank"><img src="../imgs/facebook.png" alt="Facebook"></a>
+        </div>
+
+        <p class="copyright"> &copy; Todos os direitos reservados. Copyright 2024</p>
+        
+    </footer>
+
+    <script src="../script/modal.js"></script>
+    <script src="../script/btn.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-image-cursos h2{
+    background-color: rgba(0,0,0,0.5) ;
+    color: #ffff;
+    font-weight: normal;
+    text-align: center;
+    padding: 30px;
+    position: absolute;
+    top: 35%;
+    left: 38%;
+    border-radius: 20px;
+}
