@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteudo{
+    margin: 0 auto;
+    padding: 30px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.conteudo h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.conteudo p{
+    line-height: 30px;
+    font-size: 18px;
+    width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conteudo p a{
+    color: black;
+}

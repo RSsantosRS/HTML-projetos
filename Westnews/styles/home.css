@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #FBF5F5;
+}
+
+/* Seção do menu e áreas */
+
+header{
+    background-color: #031930;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+header nav{
+    margin: 0 auto;
+}
+
+.box-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-menu li{
+    list-style: none;
+    padding: 5px;
+    margin-right: 40px;
+}
+
+.box-menu li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.box-menu li:hover{
+    border-bottom: 2px solid #78AEAD;
+}
+
+.areas-cursos{
+    background-color: #0C64D7;
+}
+
+.areas-cursos ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 13px;
+}
+
+.areas-cursos ul li{
+    list-style: none;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.areas-cursos ul li:hover{
+    opacity: 1;
+}
+
+.areas-cursos ul li a{
+    color: #031930;
+    text-decoration: none;
+}
+
+.main-noticia{
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    background-image: url(../imgs/main-noticia.jpeg);
+    background-position: center;
+    margin-bottom: 1px;
+}
+
+.envolve-titulo-noticia{
+    width: 65%;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: rgba(0,0,0,0.5) ;
+    margin-top: 200px;
+    opacity: 1;
+}
+
+.envolve-titulo-noticia h1{
+    border-bottom: 2px solid #78AEAD;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.envolve-titulo-noticia p{
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 800px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.envolve-titulo-noticia a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btn-main{
+    background-color: rgba(12, 100, 215, 0.41);
+    padding: 10px;
+    width: 130px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.btn-main-noticia{
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-main:hover{
+    background-color: #0C64D7;
+}
+
+/* Seção Notícias 1 */
+
+.noticias-1{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.container-noticias-1{
+    display: flex;
+    align-items: center; 
+    border-bottom: 2px solid #78AEAD;
+    width: 500px;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.img-not1{
+    background-image: url(../imgs/outubro-rosa.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    margin-right: 15px;
+}
+
+.img-not2{
+    background-image: url(../imgs/rock-in-rio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    margin-right: 15px;
+}
+
+.img-not3{
+    background-image: url(../imgs/pcd2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    margin-right: 15px;
+}
+
+.img-not4{
+    background-image: url(../imgs/enem-action.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    margin-right: 15px;
+}
+
+.box-noticia{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    width: 80%;
+}
+
+.box-noticia img{
+    border-radius: 20px;
+}
+
+.box-noticia h1{ 
+    color: rgb(24, 26, 24);
+    font-size: 25px;
+}
+
+.box-noticia a{
+    text-decoration: none;
+    color: #000;
+    background-color: rgba(12, 100, 215, 0.41);
+    padding: 10px;
+    border-radius: 12px;
+    width: 130px;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.box-noticia a:hover{
+    background-color: rgba(12, 100, 215, 0.8);
+}
+
+/* Seção Avaliação */
+
+.avaliacoes{
+    background-color: #B3D6F9;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.avaliacoes a{
+    text-decoration: none;
+    color: #000;
+}
+
+.aac{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.aac h1{
+    border-bottom: 2px solid #78AEAD;
+}
+
+.aac ul li{
+    padding: 5px;
+}
+
+.aac ul li a:hover{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+table{
+    background-color: #FBF5F5;
+    padding: 20px;
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+thead tr th{
+    color: #78AEAD;
+    font-weight: normal;
+}
+
+
+td{
+    padding-top: 10px;
+}
+
+.titulo{
+    font-weight: bold;
+}
+
+.border-bottom{
+    border-bottom: 2px solid #78AEAD;
+    padding: 10px;
+}
+
+.datas p{
+    font-weight: bold;
+    font-size: 18px
+}
+
+/* Seção Notícias 2 */
+.container-noticias2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+    background-color: #0C64D7;
+}
+
+.container{
+    color: aliceblue;
+    width: 340px;
+    margin: auto;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #031930;
+}
+
+.container a{
+    color: #FFFFFF;
+}
+
+.container a:hover{
+    color: #B3D6F9;
+}
+
+.container img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.baixoDireita{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    height: 90px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+/* Seção do modal */
+.modal{
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #78AEAD;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+}
+
+.modal-body{
+    padding: 10px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.btn-primary {
+    background-color: #0C64D7;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #031930;
+}
+
+/* Seção do rodapé */
+footer{
+    background-color: #031930;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer img{
+    width: 38px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.box-menu li:hover {
+    border-bottom: none;
+}
+
+.box-menu li a:hover{
+    color: #B3D6F9;
+}
+
+.logo-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-footer img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-footer p{
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.box-icones{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-icones a{
+    margin-right: 15px;
+}
+
+.copyright{
+    /* border-top: 2px solid #78AEAD; */
+    font-size: 13px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+}
