@@ -27,14 +27,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Verifica se encontrou um usuário
     if ($user = $result->fetchArray(SQLITE3_ASSOC)) {
         // Debug: Mostrando o array do usuário
-        var_dump($user); // Remova isso em produção
+        //var_dump($user); // Remova isso em produção
 
         // Se a senha estiver correta, redireciona para index.html
         if (password_verify($senha, $user['senha'])) {
-            header('Location: index.html');
+            header('Location: indexPOS.html');
             exit();
         } else {
-            echo "Credenciais inválidas.";
+            echo "<script>
+            alert('Credenciais inválidas!');
+            window.location.href = 'login.html';
+          </script>";
         }
     } else {
         echo "Credenciais inválidas!";

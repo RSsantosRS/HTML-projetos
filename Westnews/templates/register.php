@@ -30,12 +30,15 @@
         $stmt->bindValue(':email', $email, SQLITE3_TEXT);
         $stmt->bindValue(':data_nasc', $data_nasc, SQLITE3_TEXT);
         $stmt->bindValue(':campus', $campus, SQLITE3_TEXT);
-        $stmt->bindValue(':matricula', $hashedSenha, SQLITE3_TEXT);
+        $stmt->bindValue(':matricula', $matricula, SQLITE3_TEXT);
         $stmt->bindValue(':senha', $hashedSenha, SQLITE3_TEXT);
 
         // Executa a consulta
         if ($stmt->execute()) {
-            echo "Usuário cadastrado com sucesso!";
+            echo "<script>
+            alert('Usuário cadastrado com sucesso!');
+            window.location.href = 'login.html';
+          </script>";
         } else {
             echo "Erro ao cadastrar o usuário: " . $db->lastErrorMsg();
         }
