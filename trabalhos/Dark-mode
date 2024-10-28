@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Curso Santos</title>
+    <style>
+        body {
+            background-color: #a68563;
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        img {
+            height: 300px;
+            width: 800px;
+            display: block;
+            margin: 0 auto;
+        }
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #e6d4c2;
+            border: none;
+            color: rgb(20, 20, 20);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            width: 300px;
+            z-index: 1;
+        }
+        button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        div#container {
+            position: relative;
+            width: 800px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        div#conteudo {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        h1 {
+            text-align: center;
+            background-color: #e6d4c2;
+            font-size: 60px;
+            color: rgb(48, 47, 47);
+            font-family: 'Brush Script MT', cursive;
+            text-shadow: 2px 1px 2px;   
+            margin: 0;
+        }   
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
+        form {
+            padding: 15px 32px;
+            font-size: 20px;
+            color: rgb(48, 47, 47);
+            text-align: center;
+            max-width: 600px; 
+            margin: 0 auto;
+        } 
+        h2 {
+            font-size: 30px;
+        }  
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        .radio-group label {
+            margin-left: 10px;
+            display: block; 
+        }
+        .radio-group input[type="radio"],
+        .radio-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        /* Modo escuro */
+        .dark-mode {
+            --cor-fundo: rgb(0, 0, 0);
+            --cor-texto: rgb(255, 255, 255);
+        }
+        body {
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+        }
+        .dark-mode .titulo {
+            color: var(--cor-texto);
+        }
+        /* Estilo dos radios em modo escuro */
+        .dark-mode .radio-group label {
+            color: var(--cor-texto);
+        }
+        .dark-mode .radio-group input[type="radio"],
+        .dark-mode .radio-group input[type="checkbox"] {
+            background-color: var(--cor-texto);
+            border-color: var(--cor-texto);
+        }
+        .btndark {
+            padding: 15px 32px;
+            font-size: 20px;
+            color: rgb(48, 47, 47);
+            text-align: center;
+            max-width: 600px; 
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <hr />
+    <h1>Colégio Santos</h1>
+    <hr />
+    <label>dark-mode</label>
+    <input class="bntdark" type="checkbox">
+    <div class="container">
+        <h2 class="titulo">Complete o formulário para salvar suas informações</h2>
+        <hr />
+        <form action="/action_page.php">
+            <label class="titulo">Primeiro nome:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Digite seu primeiro nome..."><br>
+
+            <label class="titulo">Sobrenome:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Digite seu sobrenome..."><br>
+
+            <label class="titulo" for="matricula">Matricula:</label><br>
+            <input type="text" id="matricula" name="matricula" placeholder="Digite sua matricula..."><br>
+            
+            <h2 class="titulo">Selecione seu curso</h2>
+
+            <div class="radio-group">
+                <input type="checkbox" id="html" name="fav_language" value="HTML">
+                <label for="html">Matemática e lógica</label>
+            </div>
+            <div class="radio-group">
+                <input type="checkbox" id="português" name="fav_language" value="português">
+                <label for="português">Português e linguagens</label>
+            </div>
+            <div class="radio-group">
+                <input type="checkbox" id="prog" name="fav_language" value="prog">
+                <label for="prog">Introdução a programação</label>
+            </div>
+            <div class="radio-group">
+                <input type="checkbox" id="linguas" name="fav_language" value="linguas">
+                <label for="linguas">Línguas estrangeiras</label>
+            </div>
+        </form>
+        <h2 class="titulo">Verificação de Nacionalidade</h2>
+        <div id="container">
+            <div id="conteudo">
+                <img src="https://static.wikia.nocookie.net/theamazingworldofgumball/images/e/ee/ElmoreJrHigh.png/revision/latest/scale-to-width-down/1200?cb=20150416004454" alt="Imagem da escola">
+                <button class="btn">Estudante estrangeiro</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector("input[type='checkbox']").onclick = () => {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+</html>
