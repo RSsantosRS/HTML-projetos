@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Verificador de Número Primo</title>
+    <style>
+        body{
+            font-family: cursive;
+            display: flex; /* Usando flexbox para centralizar */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Faz o body ter altura total da tela */
+            flex-direction: column; /* Organiza itens na vertical */
+            background-image: url("https://png.pngtree.com/background/20210712/original/pngtree-cute-hand-drawn-style-mathematics-education-pink-background-picture-image_1176711.jpg");
+        }
+        button{
+            font-family: cursive;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Verificador de Número Primo</h1>
+    <button onclick="verificarNumeroPrimo()">Verificar Número Primo</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarNumeroPrimo() {
+            // Solicita um número ao usuário
+            let numero = parseInt(prompt("Digite um número:"));
+
+            // Verifica se o número é válido
+            //innertext manipula textos simples
+            if (isNaN(numero)) {
+                document.getElementById("resultado").innerText = "Por favor, insira um número válido.";
+                return;
+            }
+
+            // Verifica se é primo
+            //menor que 2 não é considerado primo(0,1)
+            if (numero < 2) {
+                document.getElementById("resultado").innerText = `${numero} não é um número primo.`;
+                return;
+            }
+
+            let ehPrimo = true;
+            //variavel para indicar se numero é primo
+            for (let i = 2; i <= Math.sqrt(numero); i++) {
+                //loop começa com 2 e vai ate a raiz quadrada,se tiver divisor entre ,não é primo
+                if (numero % i === 0) {
+                    //verifica resto da divisão é zero,se for retorna false(nao primo)
+                    ehPrimo = false; 
+                    break;
+                }
+            }
+
+            // exibir numero, if se for true e else se for false
+            if (ehPrimo) {
+                document.getElementById("resultado").innerText = `${numero} é um número primo.`;
+            } else {
+                document.getElementById("resultado").innerText = `${numero} não é um número primo.`;
+            }
+        }
+    </script>
+</body>
+
+</html>
