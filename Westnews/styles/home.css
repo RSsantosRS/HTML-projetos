@@ -4,6 +4,70 @@
     box-sizing: border-box;
 }
 
+/* Alterações BOOSTRAP */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0rem;
+}
+
+.h1, h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+table {
+    caption-side: bottom;
+    border-collapse: separate;
+}
+
+.border-bottom {
+    border-bottom: 2px solid #78AEAD !important;
+}
+
+.modal{
+    --bs-modal-padding: 0px;
+    --bs-modal-margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    border-bottom: none !important;
+    border-top-left-radius: none !important;
+    border-top-right-radius: none !important;
+}
+
+.modal-content {
+    margin: 13% auto;
+}
+
+.modal-footer {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: none !important;
+    background-color: none !important;
+    border-top: none !important;
+    border-bottom-right-radius: none !important;
+    border-bottom-left-radius: none !important;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -297,7 +361,6 @@ thead tr th{
     font-weight: normal;
 }
 
-
 td{
     padding-top: 10px;
 }
@@ -314,6 +377,87 @@ td{
 .datas p{
     font-weight: bold;
     font-size: 18px
+}
+
+/* Configurações do carrossel */
+.container-carrossel{
+    padding: 50px;
+    text-align: center;
+    background-color: #B3D6F9;
+}
+
+.container-carrossel h1{
+    padding: 20px; 
+    margin-bottom: 20px !important;
+}
+
+.carousel{
+    max-width: 1000px; 
+    margin: 0 auto;
+    background-color: #0C64D7;
+    border-radius: 10px;
+}
+  
+.carousel-item img{
+    width: 100%; 
+    height: 400px;
+    object-fit: contain; 
+}
+  
+.slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+  
+.slides {
+    width: 400px;
+    height: 400px;
+    display: flex;
+}
+  
+.slides input {
+    display: none;
+}
+  
+.slider {
+    width: 25%;
+    position: relative;
+}
+  
+.slide image {
+    width: 800px;
+}
+  
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+  
+.manual-btn {
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: move;
+    transition: .05s;
+}
+  
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+  
+.manual-btn:hover {
+    background-color: #FFF;
+}
+  
+.slide_first {
+    width: 400px;
+    height: 400px;
+    display: flex;
 }
 
 /* Seção Notícias 2 */

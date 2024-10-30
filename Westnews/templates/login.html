@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>West News</title>
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/home.css">
     <style>
         body, html {
@@ -11,6 +12,7 @@
             margin: 0;
             display: flex;
             flex-direction: column;
+            background-color: #b3d7f8; 
         }
 
         .login-cadastro {
@@ -18,24 +20,27 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 30px;
+            padding: 50px;
         }
 
         .login-form, .cadastro-form {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             padding: 20px;
             border: 1px solid #ddd;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            width: 300px;
+            width: 350px;
+            height: 350px;
             background-color: #f9f9f9;
             margin: 10px; /* Espaço entre os formulários */
         }
 
         .login-form h2, .cadastro-form h2 {
             margin-bottom: 20px;
+            font-weight: normal;
         }
 
         .login-form label, .cadastro-form label {
@@ -50,8 +55,9 @@
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            outline: none;
         }
-        .btn-cadastro {
+        .btn-entrar{
             padding: 10px 20px;
             background-color: #132C47;
             color: white;
@@ -60,6 +66,9 @@
             cursor: pointer;
             width: auto;
             cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
             -webkit-transition-duration: 0.4s; /* Safari */
             transition-duration: 0.4s;
         }
@@ -130,19 +139,18 @@
     </section>
 
     <footer>
-        <a href="indexPOS.html"><img src="../imgs/logo-azul.png" alt="Seta"></a>
+        <a href="#home"><img src="../imgs/seta.png" alt="Seta"></a>
     
         <div class="logo-footer">
-            <img src="../imgs/logo-azul.png" alt="Logo West News">
+            <a href="indexPOS.html"><img src="../imgs/logo-azul.png" alt="Logo West News"></a>
             <p> West News</p>
         </div>
     
         <nav>
             <ul class="box-menu">
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="#sugestao"></a>Sugestão</li>
+                <li><a href="carreiras.html">Carreiras</a></li>
                 <li><a href="https://estudante.estacio.br/aura-repo/marcas/estacio/calendario-academico/aluno/2024.2-AO-VIVO_AO-VIVO_SUDESTE_ALUNO.pdf" target="_blank">Calendário</a></li>
                 <li><a href="https://online.estacio.br/c/cursos-com-mais-horas-complementares?items=8&page=2&utm_term=&utm_campaign=%5BPMax%5D+ecl-conversao&utm_source=google&utm_medium=cpc&hsa_acc=1252974095&hsa_cam=21580762513&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL0PnbnnpF7_wC8sNv3lsQJclnNpmFc8BPP_mweAi1I2FWzgjdrs_uBoCWCEQAvD_BwE" target="_blank">AAC</a></li>
             </ul>

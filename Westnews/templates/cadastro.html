@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>West News</title>
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/home.css">
     <style>
         body, html {
@@ -27,16 +28,18 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
+            padding: 30px;
             border: 1px solid #ddd;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             width: 300px;
             background-color: #f9f9f9;
             margin: 10px; /* Espaço entre os formulários */
+            width: 350px;
         }
 
         .login-form h2, .cadastro-form h2 {
+            font-weight: normal;
             margin-bottom: 20px;
         }
 
@@ -52,6 +55,7 @@
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            outline: none;
         }
 
         .btn-cadastro {
@@ -62,6 +66,9 @@
             border-radius: 5px;
             cursor: pointer;
             width: auto;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 1px;
             -webkit-transition-duration: 0.4s; /* Safari */
             transition-duration: 0.4s;
         }
@@ -79,9 +86,16 @@
             cursor: pointer;
             -webkit-transition-duration: 0.4s; /* Safari */
             transition-duration: 0.4s;
-
-          
         }
+
+        .box-termos{
+            max-width: 280px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+        }
+
         #termos{
             width: 20px;
             height: 20px;
@@ -157,10 +171,12 @@
                 <label for="confirm-password">Confirme a Senha:</label>
                 <input type="password" id="confirm-password" name="confirm_password" required>
 
-                <label for="termos">Estou de acordo e ciente sobre os <a href="termos.html" target="_blank">termos</a> de consentimento do site.</label>
-                <input type="checkbox" id="termos" name="termos" required>
+                <div class="box-termos">
+                    <label for="termos">Estou de acordo e ciente sobre os <a href="termos.html" target="_blank">termos</a> de consentimento do site.</label>
+                    <input type="checkbox" id="termos" name="termos" required>
+                </div>
                 <br>
-                <button type="submit">Cadastrar</button>
+                <button class="btn-cadastro" type="submit">Cadastrar</button>
             </form>
         </div>
     </section>
@@ -177,7 +193,7 @@
             <ul class="box-menu">
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="carreiras.html">Carreiras</a></li>
                 <li><a href="https://estudante.estacio.br/aura-repo/marcas/estacio/calendario-academico/aluno/2024.2-AO-VIVO_AO-VIVO_SUDESTE_ALUNO.pdf" target="_blank">Calendário</a></li>
                 <li><a href="https://online.estacio.br/c/cursos-com-mais-horas-complementares?items=8&page=2&utm_term=&utm_campaign=%5BPMax%5D+ecl-conversao&utm_source=google&utm_medium=cpc&hsa_acc=1252974095&hsa_cam=21580762513&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjwmaO4BhAhEiwA5p4YL0PnbnnpF7_wC8sNv3lsQJclnNpmFc8BPP_mweAi1I2FWzgjdrs_uBoCWCEQAvD_BwE" target="_blank">AAC</a></li>
             </ul>
