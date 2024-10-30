@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                 background-image: url("https://wallpapers.com/images/hd/news-background-j6i0ebgqnb7bnmuj.jpg");
+            }
+            .box{
+                color: rgb(224, 8, 51);
+                font-family: cursive;
+                justify-items: center;
+                text-align: center;
+                line-height: 0.16;
+                padding-top: 12px;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                border-radius: 20%;                  
+            }
+            h1{
+                text-shadow: 0 0 3px black;
+            }
+        </style>
+    </head>
+    <div class="box">
+        <h1> Bem vindo(a) ao sistema de integração Rio-de-janeiro!</h1>
+        <h1> portal de noticias G1!</h1>
+        <br>     
+        <iframe class="box"
+            src="https://g1.globo.com/rj/rio-de-janeiro/"
+            height="500px"
+            width="900px">
+    </iframe>
+    </div>        
+</html>
